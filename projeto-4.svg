@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <rect width="800" height="500" fill="#4a1e6b"/>
+  <circle cx="640" cy="120" r="150" fill="#a86bd6" opacity="0.35"/>
+  <circle cx="180" cy="400" r="110" fill="#a86bd6" opacity="0.25"/>
+  <rect x="60" y="200" width="360" height="14" rx="7" fill="#a86bd6" opacity="0.8"/>
+  <rect x="60" y="232" width="240" height="14" rx="7" fill="#a86bd6" opacity="0.55"/>
+  <rect x="60" y="264" width="300" height="14" rx="7" fill="#a86bd6" opacity="0.4"/>
+  <text x="60" y="150" font-family="system-ui, sans-serif" font-size="40" font-weight="700" fill="#ffffff">Lista de compras</text>
+  <text x="60" y="460" font-family="system-ui, sans-serif" font-size="20" fill="#a86bd6">Projeto 4</text>
+</svg>
