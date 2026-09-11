@@ -78,16 +78,25 @@ h2 {
   padding-bottom: 6px;
 }
 
+.carrossel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 16px;
+  scroll-snap-type: x mandatory;
+}
+
 .carrossel img {
-  width: 300px;
+  flex: 0 0 300px;
+  scroll-snap-align: start;
   border: 1px solid #9fb3ab;
 }
 
 .card {
+  flex: 1 1 280px;
   background-color: #e4ece9;
   border: 1px solid #9fb3ab;
   padding: 16px;
-  flex: 1 1 280px;
 }
 
 .card h3 {
@@ -110,10 +119,9 @@ h2 {
 }
 
 .rodape a {
-    color: #0d5b52;
-    text-decoration: none;
+  color: #0d5b52;
+  text-decoration: none;
 }
-
 
 /* ==========================================================
    R1 — NAVEGAÇÃO HORIZONTAL   ·   já resolvido
@@ -128,7 +136,6 @@ h2 {
   margin: 0;          /* <ul> tem margem por padrão do navegador */
   padding: 0;         /* e recuo à esquerda por padrão */
 }
-
 
 /* ==========================================================
    DAQUI PARA BAIXO É COM VOCÊ
@@ -148,7 +155,7 @@ h2 {
   list-style: none;
   padding: 0;
   margin: 0;
-  }
+}
 
 .galeria {
   display: flex;
@@ -156,9 +163,15 @@ h2 {
   gap: 16px;
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
   .topo, .menu ul, .rodape, .links {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 360px) {
+  body, .topo, .menu, main, .rodape {
+    padding: 12px;
   }
 }
